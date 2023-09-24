@@ -16,6 +16,7 @@
 		16E020B62ABF7A0700F110D3 /* Spot_a_KnotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E020B52ABF7A0700F110D3 /* Spot_a_KnotTests.swift */; };
 		16E020C02ABF7A0700F110D3 /* Spot_a_KnotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E020BF2ABF7A0700F110D3 /* Spot_a_KnotUITests.swift */; };
 		16E020C22ABF7A0700F110D3 /* Spot_a_KnotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E020C12ABF7A0700F110D3 /* Spot_a_KnotUITestsLaunchTests.swift */; };
+		16E020CF2AC0D97F00F110D3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E020CE2AC0D97F00F110D3 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		16E020BB2ABF7A0700F110D3 /* Spot-a-KnotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spot-a-KnotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E020BF2ABF7A0700F110D3 /* Spot_a_KnotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot_a_KnotUITests.swift; sourceTree = "<group>"; };
 		16E020C12ABF7A0700F110D3 /* Spot_a_KnotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot_a_KnotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		16E020CE2AC0D97F00F110D3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				16E020A72ABF7A0600F110D3 /* Assets.xcassets */,
 				16E020A92ABF7A0600F110D3 /* LaunchScreen.storyboard */,
 				16E020AC2ABF7A0600F110D3 /* Info.plist */,
+				16E020CE2AC0D97F00F110D3 /* GameViewController.swift */,
 			);
 			path = "Spot-a-Knot";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E020CF2AC0D97F00F110D3 /* GameViewController.swift in Sources */,
 				16E020A32ABF7A0000F110D3 /* ViewController.swift in Sources */,
 				16E0209F2ABF7A0000F110D3 /* AppDelegate.swift in Sources */,
 				16E020A12ABF7A0000F110D3 /* SceneDelegate.swift in Sources */,
