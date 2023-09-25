@@ -15,7 +15,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet var label: UILabel!
     @IBOutlet var table: UITableView!
-    
+    @IBOutlet var image: UIImageView!
     
     
     override func viewDidLoad() {
@@ -29,6 +29,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     private func configureUI (question: Question) {
         label.text = question.text
+        label.largeContentImage = question.img
         currentQuestion = question
         table.reloadData()
 
@@ -40,25 +41,25 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     private func setupQuestions() {
-        gameModels.append(Question(text: "Unknot", answers: [
-        Answer(text: "Trefoil", correct: false),
-        Answer(text: "Unknot", correct: true),
-        Answer(text: "Pentafoil", correct: false),
-        Answer(text: "Figure 8", correct: false)]))
+        gameModels.append(Question(img: UIImage(named:"0_1"), text: "Unknot", answers: [
+            Answer(img: UIImage(named:"3_1"), text: "Trefoil", correct: false),
+            Answer(img: UIImage(named:"0_1"), text: "Unknot", correct: true),
+            Answer(img: UIImage(named:"4_1"), text: "Pentafoil", correct: false),
+            Answer(img: UIImage(named:"5_1"), text: "Figure 8", correct: false)]))
         
     
-        gameModels.append(Question(text: "Trefoil", answers: [
-        Answer(text: "Pentafoil", correct: false),
-        Answer(text: "Figure 8", correct: false),
-        Answer(text: "Unknot", correct: false),
-        Answer(text: "Trefoil", correct: true)]))
+        gameModels.append(Question(img: UIImage(named:"3_1"), text: "Trefoil", answers: [
+            Answer(img: UIImage(named:"5_1"), text: "Pentafoil", correct: false),
+            Answer(img: UIImage(named:"4_1"), text: "Figure 8", correct: false),
+            Answer(img: UIImage(named:"0_1"), text: "Unknot", correct: false),
+            Answer(img: UIImage(named:"3_1"), text: "Trefoil", correct: true)]))
         
     
-        gameModels.append(Question(text: "Figure 8", answers: [
-        Answer(text: "Figure 8", correct: true),
-        Answer(text: "Pentafoil", correct: false),
-        Answer(text: "Unknot", correct: false),
-        Answer(text: "Trefoil", correct: false)]))
+        gameModels.append(Question(img: UIImage(named:"4_1"), text: "Figure 8", answers: [
+            Answer(img: UIImage(named:"4_1"), text: "Figure 8", correct: true),
+            Answer(img: UIImage(named:"5_1"), text: "Pentafoil", correct: false),
+            Answer(img: UIImage(named:"0_1"), text: "Unknot", correct: false),
+            Answer(img: UIImage(named:"3_1"), text: "Trefoil", correct: false)]))
         
     }
     
@@ -69,6 +70,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = currentQuestion?.answers[indexPath.row].text
+        cell.imageView?.image = currentQuestion?.answers[indexPath.row].img
         return cell
     }
     
@@ -107,11 +109,13 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
 }
 
 struct Question {
+    let img:UIImage?
     let text: String
     let answers: [Answer]
 }
 
 struct Answer {
+    let img: UIImage?
     let text: String
     let correct: Bool
 }
