@@ -16,16 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spot-a-Knot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqa-6i-fhY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🪢🪢 Spot-a-Knot 🪢🪢" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqa-6i-fhY">
                                 <rect key="frame" x="20" y="69" width="353" height="183"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
                                 <color key="textColor" systemColor="tintColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OC3-Yx-NUo">
-                                <rect key="frame" x="145.33333333333334" y="408.66666666666669" width="102.66666666666666" height="35"/>
+                                <rect key="frame" x="131.66666666666666" y="408.66666666666669" width="129.99999999999997" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Play game"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Play game 👾"/>
                                 <connections>
                                     <action selector="startGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="xKw-QA-T3O"/>
                                 </connections>
