@@ -29,7 +29,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     private func configureUI (question: Question) {
         label.text = question.text
-        label.largeContentImage = question.img
+        image.image = question.img
         currentQuestion = question
         table.reloadData()
 

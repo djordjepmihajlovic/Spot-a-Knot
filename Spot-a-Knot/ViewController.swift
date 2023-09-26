@@ -29,6 +29,15 @@ class ViewController: UIViewController {
         present(vc, animated: true)
         
     }
+    
+    @IBAction func startCollection() {
+        
+        let lc = storyboard?.instantiateViewController(identifier: "collection") as! CollectionViewController
+        lc.modalPresentationStyle = .fullScreen
+        present(lc, animated: true)
+        
+    }
+    
 
 
 }
