@@ -1,4 +1,4 @@
-# Spot-a-Knot 🪢
+# 🪢 Spot-a-Knot 🪢
 Spot-a-Knot IOS App source code
 
 
