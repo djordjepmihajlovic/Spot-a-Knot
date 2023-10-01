@@ -138,10 +138,26 @@
                     <view key="view" contentMode="scaleToFill" id="7jp-fT-7Nb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wl0-Gi-RHc">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5Lm-fK-MGO"/>
                         <color key="backgroundColor" red="0.032843921329999998" green="0.080717541279999999" blue="0.1686365306" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Wl0-Gi-RHc" firstAttribute="leading" secondItem="5Lm-fK-MGO" secondAttribute="leading" id="2zz-ec-TFE"/>
+                            <constraint firstItem="Wl0-Gi-RHc" firstAttribute="top" secondItem="5Lm-fK-MGO" secondAttribute="top" id="ZM7-zd-Ntc"/>
+                            <constraint firstItem="5Lm-fK-MGO" firstAttribute="bottom" secondItem="Wl0-Gi-RHc" secondAttribute="bottom" id="aGt-fa-KRi"/>
+                            <constraint firstItem="Wl0-Gi-RHc" firstAttribute="top" secondItem="5Lm-fK-MGO" secondAttribute="top" id="hfa-4V-yUD"/>
+                            <constraint firstItem="5Lm-fK-MGO" firstAttribute="trailing" secondItem="Wl0-Gi-RHc" secondAttribute="trailing" id="jum-9s-svK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RbQ-MA-mlo"/>
+                    <connections>
+                        <outlet property="table" destination="Wl0-Gi-RHc" id="8qh-1z-9as"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AeT-nB-1pA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,6 +183,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

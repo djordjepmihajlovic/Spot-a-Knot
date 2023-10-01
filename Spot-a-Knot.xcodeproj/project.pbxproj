@@ -19,6 +19,10 @@
 		16E020CF2AC0D97F00F110D3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E020CE2AC0D97F00F110D3 /* GameViewController.swift */; };
 		16E020D12AC380AF00F110D3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E020D02AC380AF00F110D3 /* CollectionViewController.swift */; };
 		16E020D32AC5FC9400F110D3 /* Linee Regular-Demo in Resources */ = {isa = PBXBuildFile; fileRef = 16E020D22AC5FC9300F110D3 /* Linee Regular-Demo */; };
+		16E020D82ACA246400F110D3 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E020D62ACA246400F110D3 /* CollectionTableViewCell.swift */; };
+		16E020D92ACA246400F110D3 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E020D72ACA246400F110D3 /* CollectionTableViewCell.xib */; };
+		16E020DC2ACA249F00F110D3 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E020DA2ACA249F00F110D3 /* MyCollectionViewCell.swift */; };
+		16E020DD2ACA249F00F110D3 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E020DB2ACA249F00F110D3 /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		16E020CE2AC0D97F00F110D3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		16E020D02AC380AF00F110D3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		16E020D22AC5FC9300F110D3 /* Linee Regular-Demo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Linee Regular-Demo"; path = "../../../../../../Downloads/Linee Regular-Demo"; sourceTree = "<group>"; };
+		16E020D62ACA246400F110D3 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		16E020D72ACA246400F110D3 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		16E020DA2ACA249F00F110D3 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		16E020DB2ACA249F00F110D3 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,8 @@
 		16E0209D2ABF7A0000F110D3 /* Spot-a-Knot */ = {
 			isa = PBXGroup;
 			children = (
+				16E020D52ACA241600F110D3 /* Collection Cell */,
+				16E020D42ACA23F800F110D3 /* Table Cell */,
 				16E020D22AC5FC9300F110D3 /* Linee Regular-Demo */,
 				16E0209E2ABF7A0000F110D3 /* AppDelegate.swift */,
 				16E020A02ABF7A0000F110D3 /* SceneDelegate.swift */,
@@ -134,6 +144,24 @@
 				16E020C12ABF7A0700F110D3 /* Spot_a_KnotUITestsLaunchTests.swift */,
 			);
 			path = "Spot-a-KnotUITests";
+			sourceTree = "<group>";
+		};
+		16E020D42ACA23F800F110D3 /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				16E020D62ACA246400F110D3 /* CollectionTableViewCell.swift */,
+				16E020D72ACA246400F110D3 /* CollectionTableViewCell.xib */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		16E020D52ACA241600F110D3 /* Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				16E020DA2ACA249F00F110D3 /* MyCollectionViewCell.swift */,
+				16E020DB2ACA249F00F110D3 /* MyCollectionViewCell.xib */,
+			);
+			path = "Collection Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +268,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E020D92ACA246400F110D3 /* CollectionTableViewCell.xib in Resources */,
 				16E020AB2ABF7A0600F110D3 /* LaunchScreen.storyboard in Resources */,
+				16E020DD2ACA249F00F110D3 /* MyCollectionViewCell.xib in Resources */,
 				16E020A82ABF7A0600F110D3 /* Assets.xcassets in Resources */,
 				16E020A62ABF7A0000F110D3 /* Main.storyboard in Resources */,
 				16E020D32AC5FC9400F110D3 /* Linee Regular-Demo in Resources */,
@@ -269,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				16E020CF2AC0D97F00F110D3 /* GameViewController.swift in Sources */,
+				16E020DC2ACA249F00F110D3 /* MyCollectionViewCell.swift in Sources */,
+				16E020D82ACA246400F110D3 /* CollectionTableViewCell.swift in Sources */,
 				16E020A32ABF7A0000F110D3 /* ViewController.swift in Sources */,
 				16E0209F2ABF7A0000F110D3 /* AppDelegate.swift in Sources */,
 				16E020A12ABF7A0000F110D3 /* SceneDelegate.swift in Sources */,
