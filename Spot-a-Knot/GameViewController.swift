@@ -61,6 +61,12 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
             Answer(img: UIImage(named:"0_1"), text: "Unknot", correct: false),
             Answer(img: UIImage(named:"3_1"), text: "Trefoil", correct: false)]))
         
+        gameModels.append(Question(img: UIImage(named:"10_146"), text: "10_146", answers: [
+            Answer(img: UIImage(named:"10_117"), text: "10_117", correct: false),
+            Answer(img: UIImage(named:"10_147"), text: "10_147", correct: false),
+            Answer(img: UIImage(named:"10_91"), text: "10_91", correct: false),
+            Answer(img: UIImage(named:"10_146"), text: "10_146", correct: true)]))
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -71,6 +77,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = currentQuestion?.answers[indexPath.row].text
         cell.imageView?.image = currentQuestion?.answers[indexPath.row].img
+        
         return cell
     }
     
