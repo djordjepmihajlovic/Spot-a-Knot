@@ -18,8 +18,16 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     func configure(with models: [Model]) {
         self.models = models
         collectionView.reloadData()
-        
+
     }
+
+//    func configure(with model: Model) {
+//        // Use the model to set up your cell, e.g., set the image
+//        self.models = model
+//        imageView.image = UIImage(named: model.imageName)
+//
+//    }
+    
 //    @12.10
     @IBOutlet var collectionView: UICollectionView!
     

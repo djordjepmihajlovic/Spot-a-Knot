@@ -77,6 +77,9 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = currentQuestion?.answers[indexPath.row].text
         cell.imageView?.image = currentQuestion?.answers[indexPath.row].img
+        let randomInt = Int.random(in: 1..<4)
+        
+        cell.imageView?.transform = CGAffineTransform(rotationAngle: CGFloat(Double(randomInt)*(Double.pi/2)))
         
         return cell
     }
