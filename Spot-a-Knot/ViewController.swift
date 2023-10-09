@@ -5,13 +5,6 @@
 //  Created by Djordje Mihajlovic on 23/09/2023.
 //
 
-/*
- Things to do:
- Game
- Knot Collection
- Answer object
- Question object
- */
 
 import UIKit
 

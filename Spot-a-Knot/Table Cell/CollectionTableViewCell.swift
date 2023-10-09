@@ -21,14 +21,7 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
 
     }
 
-//    func configure(with model: Model) {
-//        // Use the model to set up your cell, e.g., set the image
-//        self.models = model
-//        imageView.image = UIImage(named: model.imageName)
-//
-//    }
-    
-//    @12.10
+
     @IBOutlet var collectionView: UICollectionView!
     
     var models = [Model]()
@@ -62,7 +55,7 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 250, height: 250)
+        return CGSize(width: 150, height: 150)
     }
     
 }
